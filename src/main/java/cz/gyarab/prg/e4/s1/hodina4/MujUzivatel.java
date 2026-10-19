@@ -1,6 +1,7 @@
 package cz.gyarab.prg.e4.s1.hodina4;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
 
 public class MujUzivatel {
@@ -12,7 +13,7 @@ public class MujUzivatel {
         this.id = id;
         this.jmeno = jmeno;
 
-        this.role = new ArrayList<>(role);
+        this.role = Collections.unmodifiableList(role);
     }
 
     public int getId() {
